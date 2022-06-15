@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <span id="hr"></span>
+        <span>:</span>
+        <span id="min"></span>
+        <span>:</span>
+        <span id="sec"></span>
+    </h1>
+
+</body>
+</html>
+<script>
+    // // let index = 5;
+    // // for(i =0;i<i.lenght;i++){
+
+    // // }
+    // // let name = ['ife','ambrose']
+    // document.getElementById('mad').innerHTML= return name(1);
+    // settimeout runs one 
+    // setinterval runs continosulsy
+
+   setInterval(function(){
+       let date = new Date();
+       document.getElementById('hr').innerText = date.getHours()
+       document.getElementById('min').innerText = date.getMinutes()
+       document.getElementById('sec').innerText = date.getSeconds()
+   }, 1000)
+
+</script>
